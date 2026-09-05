@@ -68,9 +68,16 @@
   .side .role{font-size:14.5px; font-weight:600; margin:0 0 3px}
   .side .org{font-size:14px; color:var(--muted); margin:0 0 3px}
   .side .mail{font-size:14px; color:var(--muted); margin:0}
-  .side .links{display:flex; justify-content:center; gap:16px; margin-top:18px; font-size:13.5px}
-  .side .links a{color:var(--muted); font-weight:600}
-  .side .links a:hover{color:var(--link); border-bottom-color:var(--link)}
+  .side .mail a{color:var(--muted)}
+  .side .mail a:hover{color:var(--link); border-bottom-color:var(--link)}
+  .side .links{display:flex; justify-content:center; align-items:center; gap:18px; margin-top:18px}
+  .side .links a{
+    color:var(--muted); display:inline-flex; align-items:center; justify-content:center;
+    height:22px; border-bottom:0; transition:color .15s;
+  }
+  .side .links a:hover{color:var(--link); border-bottom:0}
+  .side .links svg{width:21px; height:21px; fill:currentColor; display:block}
+  .side .links a.txt{font-size:14.5px; font-weight:700; letter-spacing:.03em}
 
   /* ---------- content ---------- */
   .content{min-width:0; max-width:660px}
@@ -114,11 +121,15 @@
     <h1>Evgeniia Mitrokhina</h1>
     <p class="role">Ph.D. Candidate in Political Science</p>
     <p class="org">University of Wisconsin&ndash;Madison</p>
-    <p class="mail">mitrokhina (at) wisc.edu</p>
+    <p class="mail"><a href="mailto:mitrokhina@wisc.edu">mitrokhina@wisc.edu</a></p>
     <div class="links">
-      <a href="CV.pdf">CV</a>
-      <a href="https://scholar.google.com/citations?user=vj_IeLIAAAAJ">Scholar</a>
-      <a href="https://orcid.org/0000-0001-9327-7612">ORCID</a>
+      <a href="https://scholar.google.com/citations?user=vj_IeLIAAAAJ" aria-label="Google Scholar" title="Google Scholar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 1 8l11 6 9-4.9V17h2V8L12 2Z"/><path d="M5 13.2v3.5c0 1.9 3.1 3.3 7 3.3s7-1.4 7-3.3v-3.5l-7 3.8-7-3.8Z"/></svg>
+      </a>
+      <a href="CV.pdf" class="txt" title="Curriculum Vitae">CV</a>
+      <a href="https://orcid.org/0000-0001-9327-7612" aria-label="ORCID" title="ORCID">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11"/><text x="12" y="16.4" text-anchor="middle" font-family="Source Sans 3, sans-serif" font-size="11" font-weight="700" fill="var(--bg)">iD</text></svg>
+      </a>
     </div>
   </aside>
 
@@ -135,19 +146,19 @@
 
       <div class="paper">
         <h3>Transparency under Constraint: The Adoption of Access-to-Information Laws in Autocracies</h3>
-        <p class="tag">Under review</p>
+        <p class="tag">Working paper</p>
         <p class="abs">Why do authoritarian regimes adopt transparency laws, and what shapes the design of the laws they produce? I argue that formally credible but weakly enforceable legislation becomes viable only when external reputational incentives make adoption valuable as a governance signal and the regime already controls the institutions that would enforce it. I trace five legislative attempts in Russia between 1987 and 2009.</p>
       </div>
 
       <div class="paper">
         <h3>Transparency as Control: Freedom-of-Information Litigation in Authoritarian Russia</h3>
-        <p class="tag">Dissertation chapter</p>
+        <p class="tag">Dissertation chapter &middot; Work in progress</p>
         <p class="abs">Freedom-of-information laws are understood as instruments of accountability, yet authoritarian states adopt and actively administer them. Drawing on a census of roughly 30,000 court decisions citing Russia&rsquo;s access-to-information statute, I show how litigation becomes a venue in which the state manages rather than concedes its own transparency.</p>
       </div>
 
       <div class="paper">
         <h3>Constraining the Public Record: Investigative Media and Administrative Transparency in Authoritarian Russia</h3>
-        <p class="tag">With <a href="https://www.malikatalgat.com/">Malika Talgatova</a></p>
+        <p class="tag">With <a href="https://www.malikatalgat.com/">Malika Talgatova</a> &middot; Work in progress</p>
         <p class="abs">Does investigative reporting that leans on official sources lead agencies to disclose less? Combining more than 750,000 Russian independent-media publications (2011&ndash;2022) with annual openness scores for 71 federal executive agencies, we use event-study designs to test whether agencies retrench after being cited as evidence.</p>
       </div>
 
